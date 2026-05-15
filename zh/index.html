@@ -52,6 +52,30 @@
             
         </div>
         <br />
+        <script>
+            const email_signup_zh = document.getElementById("email_signup_zh");
+            email_signup_zh.addEventListener("click", () => {
+                gtag('event', 'email_signup_zh')
+            })
+        </script>
+        <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex flex-col items-center shadow-xl p-6">
+            <h2 class=" text-emerald-800 font-extrabold text-4xl mb-4">
+                &#35746;&#38405;&#37038;&#20214;
+            </h2>
+            <form name="email-signup" method="POST" data-netlify="true" class="w-full max-w-xl">
+                <input type="hidden" name="form-name" value="email-signup" />
+                <label class="block text-emerald-800 text-lg mb-2" for="email">
+                    &#36755;&#20837;&#20320;&#30340;&#37038;&#20214;&#22320;&#22336;&#65306;
+                </label>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input id="email" type="email" name="email" required placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl border border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-400" />
+                    <button type="submit" class="px-6 py-3 rounded-xl bg-emerald-700 text-white font-bold hover:bg-emerald-800 transition">
+                        &#35746;&#38405;
+                    </button>
+                </div>
+            </form>
+        </div>
+        <br />
         <footer class="bg-gray-500">
             <div class="max-w-6xl mx-auto text-center text-gray-700 py-6">
                 &#32852;&#31995;&#25105;&#20204;&#65306;<a href="mailto:thtm.info@gmail.com">thtm.info@gmail.com</a><br />

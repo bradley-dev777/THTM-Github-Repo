@@ -50,6 +50,27 @@
             
         </div>
         <br />
+        <script>
+            const email_signup_en = document.getElementById("email_signup_en");
+            email_signup_en.addEventListener("click", () => {
+                gtag('event', 'email_signup_en')
+            })
+        </script>
+        <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex flex-col items-center shadow-xl p-6">
+            <h2 class=" text-emerald-800 font-extrabold text-4xl mb-4">
+                Get in touch!
+            </h2>
+            <form name="email-signup" method="POST" data-netlify="true" class="w-full max-w-xl">
+                <input type="hidden" name="form-name" value="email-signup" />
+                <div class="flex items-center border-b border-emerald-500 py-2">
+                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Your email address" aria-label="Email address" name="email" required>
+                    <button class="flex-shrink-0 bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded" type="submit" id="email_signup_en">
+                        Sign Up
+                    </button>
+                </div>
+            </form>
+        </div>
+        <br />
         <footer class="bg-gray-500">
             <div class="max-w-6xl mx-auto text-center text-gray-700 py-6">
                 Contact us at <a href="mailto:thtm.info@gmail.com">thtm.info@gmail.com</a><br />
