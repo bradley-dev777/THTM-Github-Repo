@@ -55,7 +55,12 @@
         <script>
             const email_signup_zh = document.getElementById("email_signup_zh");
             email_signup_zh.addEventListener("click", () => {
-                gtag('event', 'email_signup_zh')
+                gtag('event', 'email_signup', {
+                    'event_category': 'engagement',
+                    'event_label': 'Email Signup Button Clicked',
+                    'email': document.getElementById("email").value,
+                    'language': 'zh'
+                });
             })
         </script>
         <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex flex-col items-center shadow-xl p-6">

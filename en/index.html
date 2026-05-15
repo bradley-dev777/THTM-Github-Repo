@@ -53,7 +53,12 @@
         <script>
             const email_signup_en = document.getElementById("email_signup_en");
             email_signup_en.addEventListener("click", () => {
-                gtag('event', 'email_signup_en')
+                gtag('event', 'email_signup', {
+                    'event_category': 'engagement',
+                    'event_label': 'Email Signup Button Clicked',
+                    'email': document.getElementById("email").value,
+                    'language': 'en'
+                });
             })
         </script>
         <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex flex-col items-center shadow-xl p-6">
@@ -63,8 +68,8 @@
             <form name="email-signup" method="POST" data-netlify="true" class="w-full max-w-xl">
                 <input type="hidden" name="form-name" value="email-signup" />
                 <div class="flex items-center border-b border-emerald-500 py-2">
-                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Your email address" aria-label="Email address" name="email" required>
-                    <button class="flex-shrink-0 bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded" type="submit" id="email_signup_en">
+                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Your email address" aria-label="Email address" name="email" id="email" required>
+                    <button class="shrink-0 bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded" type="submit" id="email_signup_en">
                         Sign Up
                     </button>
                 </div>
