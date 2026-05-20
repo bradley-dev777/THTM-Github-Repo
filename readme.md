@@ -1,1 +1,2 @@
-# THTM Private Repo
+# THTM Github Repo
+Hello. You found my repo.
