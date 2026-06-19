@@ -1,96 +1,110 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../style.css">
         <!-- Google tag (gtag.js) -->
-         <script async src="https://www.googletagmanager.com/gtag/js?id=G-75WY3ZJJQ7"></script>
-         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT9RV39VYR"></script>
-            <script>
-              globalThis.dataLayer = globalThis.dataLayer || [];
-
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              if (globalThis.location.hostname=="bradley-dev777.github.io") {
-                gtag('config', 'G-PT9RV39VYR');
-              } else {
-                gtag('config', 'G-75WY3ZJJQ7');
-              }
-
-              gtag('event', 'visit_en')
-            </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-75WY3ZJJQ7"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT9RV39VYR"></script>
+        <script>
+          globalThis.dataLayer = globalThis.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          if (globalThis.location.hostname == "bradley-dev777.github.io") {
+            gtag('config', 'G-PT9RV39VYR');
+          } else {
+            gtag('config', 'G-75WY3ZJJQ7');
+          }
+          gtag('event', 'visit_en');
+        </script>
         <title>THTM Homepage</title>
     </head>
-    <body class=" bg-emerald-50">
-        <div id="sitenotice" class="bg-yellow-200 text-yellow-800 p-4 text-center">
-            <strong>Notice:</strong> This website is still in development, and some information may be inaccurate or incomplete. Please contact us if you have any questions or suggestions! Also note that the website will be hosted on <a href="https://github.com/bradley-dev777/bradley-dev777.github.io" target="_blank" rel="noopener noreferrer">GitHub Pages</a> because we are running out of credits, when on Github Pages email signups will not work, so contact directly by emailing us at <a href="mailto:thtm.info@gmail.com">thtm.info@gmail.com</a><br />We are aware of an issue that email signups are not working. This issue is being investigated. In the meantime, please email us instead.
+    <body class="content-page">
+
+        <div id="sitenotice" class="site-notice">
+            <strong>Notice:</strong> This website is still in development — some information may be incomplete.
+            Email signups are currently under maintenance; please contact us directly at
+            <a href="mailto:thtm.info@gmail.com">thtm.info@gmail.com</a>.
         </div>
-        <h1 class="text-9xl font-extrabold text-emerald-800 mx-auto max-w-fit">
-            Hello!
-        </h1>
-        <br /><br /><br />
-        <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex items-center shadow-xl">
-            <h2 class=" text-emerald-800 mx-auto max-w-fit font-extrabold text-4xl">
-                Who am I?
-            </h2>
-            <p class="text-xl mx-auto max-w-lg font-mono object-contain">
-                My name is Bradley Hu, and I am a current grade 6 student diagnosed with ADHD and ASD. Before I was diagnosed, I was having a hard time at school. Schoolwork was overwhelming, and I was always teased here and there. It was only a year after I moved to Canada that I learned about my diagnosis. I feel like that if I get the information and support, everyone should. 
-            </p>
-            <img src="../assets/meee.png" title="Picture of me. Sorry to people using screen readers" class=" rounded-4xl mx-auto max-w-lg object-size-down size-auto p-4 hover:p-2 transition-all duration-300 ease-in-out"/>
+
+        <div class="page-header">
+            <a href="../index.html" class="back-link">Home</a>
         </div>
-        <br />
-        <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex items-center shadow-xl">
-            <p class="text-xl mx-auto max-w-lg font-mono object-contain">
-                ADHD/ASD is NOT a disease/"bad" condition. Instead, it's a label, a thing that sets you aside. However, it also means that you might be more easily distracted, angered, etc. 
-            </p>
-            <h2 class=" text-emerald-800 mx-auto max-w-fit font-extrabold text-4xl">
-                What is this, exactly?
-            </h2>
-        </div>
-        <br />
-        <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex items-center shadow-xl">
-            <h2 class=" text-emerald-800 mx-auto max-w-fit font-extrabold text-4xl">
-                So what are we doing?
-            </h2>
-            <p class="text-xl mx-auto max-w-lg font-mono object-contain">
-                Our mission/vision is to help people around the world to understand what neurodiversity is and help people with those conditions to reach their full potential!            </p>
-            
-        </div>
-        <br />
-        <script>
-            const email_signup_en = document.getElementById("email_signup_en");
-            email_signup_en.addEventListener("click", () => {
-                gtag('event', 'email_signup', {
-                    'event_category': 'engagement',
-                    'event_label': 'Email Signup Button Clicked',
-                    'email': document.getElementById("email").value,
-                    'language': 'en'
-                });
-            })
-        </script>
-        <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex flex-col items-center shadow-xl p-6">
-            <h2 class=" text-emerald-800 font-extrabold text-4xl mb-4">
-                Get in touch!
-            </h2>
-            <form name="email-signup" method="POST" data-netlify="true" class="w-full max-w-xl">
-                <input type="hidden" name="form-name" value="email-signup" />
-                <div class="flex items-center border-b border-emerald-500 py-2">
-                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Your email address" aria-label="Email address" name="email" id="email" required>
-                    <button class="shrink-0 bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded" type="submit" id="email_signup_en">
-                        Sign Up
-                    </button>
-                </div>
-            </form>
-        </div>
-        <br />
-        <footer class="bg-gray-500">
-            <div class="max-w-6xl mx-auto text-center text-gray-700 py-6">
-                Contact us at <a href="mailto:thtm.info@gmail.com">thtm.info@gmail.com</a><br />
-                Made with ❤️ by the Hu family and Ming-ling Tsay.<br />
-                Actually programmed by Bradley!
+
+        <main class="page-main">
+
+            <div class="page-hero animate-in">
+                <h1 class="page-h1">Hello!</h1>
             </div>
+
+            <div class="section-card animate-in delay-1">
+                <h2 class="card-title">Who am I?</h2>
+                <p class="card-body">
+                    My name is Bradley Hu, and I am a current grade 6 student diagnosed with ADHD and ASD.
+                    Before I was diagnosed, I was having a hard time at school. Schoolwork was overwhelming,
+                    and I was always teased here and there. It was only a year after I moved to Canada that
+                    I learned about my diagnosis. I feel like that if I can get the information and support,
+                    everyone should.
+                </p>
+                <img src="../assets/meee.png" title="Picture of me" class="card-img" alt="Bradley Hu" />
+            </div>
+
+            <div class="section-card card-alt animate-in delay-2">
+                <h2 class="card-title">What is this, exactly?</h2>
+                <p class="card-body">
+                    ADHD/ASD is NOT a disease or a "bad" condition. Instead, it's a label — a thing that
+                    sets you apart. It also means you might be more easily distracted, angered, and so on.
+                    But it also comes with unique strengths and perspectives that the world needs.
+                </p>
+            </div>
+
+            <div class="section-card animate-in delay-3">
+                <h2 class="card-title">So what are we doing?</h2>
+                <p class="card-body">
+                    Our mission and vision is to help people around the world understand what neurodiversity
+                    is, and to help people with those conditions reach their full potential!
+                </p>
+            </div>
+
+            <div class="contact-card animate-in delay-4">
+                <h2 class="contact-card-title">Get in touch!</h2>
+                <form name="email-signup" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="email-signup" />
+                    <div class="email-form-row">
+                        <input class="email-input" type="email" placeholder="Your email address"
+                            aria-label="Email address" name="email" id="email" required>
+                        <button class="email-btn" type="submit" id="email_signup_en">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <footer class="page-footer">
+            Contact us at <a href="mailto:thtm.info@gmail.com">thtm.info@gmail.com</a><br>
+            Made with love by the Hu family and Ming-ling Tsay.<br>
+            Actually programmed by Bradley!
         </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const btn = document.getElementById("email_signup_en");
+                if (btn) {
+                    btn.addEventListener("click", () => {
+                        gtag('event', 'email_signup', {
+                            'event_category': 'engagement',
+                            'event_label': 'Email Signup Button Clicked',
+                            'email': document.getElementById("email").value,
+                            'language': 'en'
+                        });
+                    });
+                }
+            });
+        </script>
+
     </body>
 </html>
