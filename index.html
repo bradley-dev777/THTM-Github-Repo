@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Language Select</title>
+    <title>THTM — Together, Helping Those with Minds</title>
 </head>
-<body>
-    <h1 class="text-9xl font-extrabold text-emerald-800 mx-auto max-w-fit">
-        Hello!
-    </h1>
-    <br /><br /><br />
-    <div class=" bg-emerald-100 rounded-2xl mx-auto max-w-6xl flex items-center justify-center gap-6 p-8 shadow-xl">
-        <a href="./en/index.html" class="text-xl font-mono rounded-full bg-white w-32 h-32 flex items-center justify-center shadow-lg">
-            English
-        </a>
-        <a href="./zh/index.html" class="text-xl font-mono rounded-full bg-white w-32 h-32 flex items-center justify-center shadow-lg">
-            中文
-        </a>
+<body class="landing-page">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+
+    <div class="landing-inner">
+        <div class="landing-pill">Neurodiversity Awareness</div>
+        <h1 class="landing-h1">Hello!</h1>
+        <p class="landing-tagline">Together, Helping Those with Minds</p>
+        <p class="landing-desc">Choose your language to get started</p>
+        <div class="lang-picker">
+            <a href="./en/index.html" class="lang-tile">
+                English
+                <span class="lang-tile-arrow">→</span>
+            </a>
+            <a href="./zh/index.html" class="lang-tile">
+                中文
+                <span class="lang-tile-arrow">→</span>
+            </a>
+        </div>
     </div>
 </body>
 </html>
